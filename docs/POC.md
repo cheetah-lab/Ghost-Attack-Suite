@@ -9,6 +9,10 @@
 ``` python
 import urllib.parse
 import requests
+import sys
+import urllib3
+sys.stdout.reconfigure(encoding='utf-8')
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ------------------PoC信息模块-----(固定样式，缺少参数则会引起程序报错)----------------------------------
 VUL_INFO_DIC = {
@@ -76,6 +80,10 @@ def exploit(address, cmd, file, cookies, proxies):  # cmd代表命令 file文件
 ```python
 import urllib.parse
 import requests
+import sys
+import urllib3
+sys.stdout.reconfigure(encoding='utf-8')
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ------------------PoC信息模块-------------------------------------------------------------
 VUL_INFO_DIC = {
@@ -126,6 +134,10 @@ RCE检测方式不变，利用方式需要注意将PoCType置为 1 当前1状态
 ```python
 import urllib.parse
 import requests
+import sys
+import urllib3
+sys.stdout.reconfigure(encoding='utf-8')
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ------------------PoC信息模块-------------------------------------------------------------
 VUL_INFO_DIC = {
@@ -195,6 +207,10 @@ def exploit(address, cmd, file, cookie, proxies):  # cmd代表命令 file文件�
 ```python
 import urllib.parse
 import requests
+import sys
+import urllib3
+sys.stdout.reconfigure(encoding='utf-8')
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ------------------PoC信息模块-------------------------------------------------------------
 VUL_INFO_DIC = {
