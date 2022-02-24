@@ -24,6 +24,8 @@ GAS，全称 Ghost Attack Suite，由猎豹安全实验室专为安全从业人�
 
 - Python 3
 - Linux, Windows, Mac OSX
+- 内置常用模块，该部分直接影响POC编写，编写POC使用到非以下模块则会影响脚本运行，可联系我们增加
+- socket, re, base64, ldap3, urllib3, bs4, websocket, requests, argparse, sys, queue, threading, urllib, logging, lxml, docker, http.client, equests_toolbelt.utils,ajpy.ajp,binascii, copy, json, string, random, ftplib, time, hashlib, textwrap,asyncio, asyncore, bz2, csv, crypt, enum, gzip, html, http, io, math, mimetypes, ssl,telnetlib, socks, sockshandler,pymongo, pymysql, ftplib, pyzabbix,binascii, cx_Oracle, docker, redis, memcache, kazoo, sysrsync, kafka, jenkins,pymssql,elasticsearch
 
 ## 工具截图
 
