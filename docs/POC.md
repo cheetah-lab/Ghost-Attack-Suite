@@ -1,9 +1,10 @@
 ### [返回上层](../README.md)
+
 # 利用脚本编写指南
 
 ## 脚本命名、漏洞类型说明规范
 
-### [点击跳转查看](./BXGF.md)
+### [点击跳转查看](../BXGF.md)
 
 ## 脚本框架简介
 ``` python
@@ -56,8 +57,8 @@ def verify(address, cookies, proxies):
             return VUL_INFO_DIC  # 将数据返回
         else:
             return None # 将数据返回
-    except:
-        return None # 将数据返回
+    except Exception as e :
+        return None,e # 将数据返回
 
 # ------------------验证利用模块-------------------------------------------------------------
 # 利用模块模板(选填)，参考场景RCE
@@ -126,9 +127,8 @@ def verify(address, cookies, proxies):
         else:
             print("不存在漏洞！")
             return None
-    except: 
-        print("不存在漏洞！")
-        return None
+    except Exception as e :
+        return None,e
 
 ```
 
@@ -187,8 +187,8 @@ def verify(address, cookies, proxies):
             return VUL_INFO_DIC  # 将数据返回
         else:
             return None  # 将数据返回
-    except:
-        return None  # 将数据返回
+    except Exception as e :
+        return None,e  # 将数据返回
 
 # ------------------验证利用模块-------------------------------------------------------------
 # 利用模块模板(选填)，参考场景RCE
@@ -264,9 +264,8 @@ def verify(address, cookies, proxies):
             return VUL_INFO_DIC  # 将数据返回
         else:
             return None # 将数据返回
-    except:
-        print("error！")
-        return None
+    except Exception as e :
+        return None,e
 
 # ------------------验证利用模块-------------------------------------------------------------
 # 利用模块模板(选填)，参考场景文件下载
@@ -337,9 +336,8 @@ def verify(address, cookies, proxies):
             return VUL_INFO_DIC  # 将数据返回
         else:
             return None # 将数据返回
-    except:
-        print("error！")
-        return None
+    except Exception as e :
+        return None,e
 
 # ------------------验证利用模块-------------------------------------------------------------
 # 利用模块模板(选填)，参考场景文件下载
